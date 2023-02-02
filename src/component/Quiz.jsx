@@ -61,7 +61,7 @@ const Quiz = () => {
           <img src={logo} alt="logo" className="logo" />
           <div className="quiz">
             {flag && <img src={flag} alt="flag" width={200} />}
-            <p className="quiz__questison">{question}</p>
+            <p className="quiz__question">{question}</p>
             <ul className={`quiz__options ${answered && "no-pointer"}`}>
               <li
                 className={`quiz__option ${

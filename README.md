@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://country-quiz-prasannakarki77.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/18tRikxZXpIIwj3KZ6KF">
       Solution
     </a>
     <span> | </span>
@@ -45,7 +45,8 @@
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
+- [React]
+- [SASS]
 
 ## Features
 
@@ -61,7 +62,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/prasannakarki77/country-quiz.git
 
 # Install dependencies
 $ npm install
