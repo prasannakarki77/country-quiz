@@ -12,6 +12,9 @@
   text-align: left;
   font-weight: 700;
   font-size: 36px;
+  @media (max-width: 400px) {
+    font-size: 20px;
+  }
   text-transform: uppercase;
   color: #f2f2f2;
   margin-bottom: 0;
@@ -19,8 +22,10 @@
 
 .logo {
   position: absolute;
-  height: 150px;
   width: 150px;
+  @media (max-width: 400px) {
+    max-width: 100px;
+  }
   top: -20px;
   right: 10px;
 }

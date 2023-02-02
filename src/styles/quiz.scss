@@ -39,7 +39,6 @@
     }
   }
   &__btn {
-    margin-left: 320px;
     color: #fff;
     padding: 15px 36px;
     font-weight: 700;
@@ -54,6 +53,10 @@
       background: #de9219;
     }
   }
+}
+.quiz-btn-container {
+  display: flex;
+  justify-content: end;
 }
 
 .no-pointer {
@@ -79,6 +82,7 @@
     font-weight: 700;
     font-size: 48px;
     text-align: center;
+    margin: 0;
   }
   &__results {
     font-family: "Poppins";
@@ -123,7 +127,8 @@
 .finished-logo {
   display: flex;
   justify-content: center;
+  overflow: hidden;
   img {
-    max-width: 200px;
+    max-width: 250px;
   }
 }

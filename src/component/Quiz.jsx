@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import QuizContext from "../contexts/QuizContext";
 
 import logo from "../assets/country-quiz-logo.svg";
+import complete from "../assets/completed.svg";
 import "../styles/quiz.scss";
 import { useState } from "react";
 const Quiz = () => {
@@ -14,7 +15,7 @@ const Quiz = () => {
     dispatch,
   } = useContext(QuizContext);
   const { question, options, answer, flag } = questions[questionNo];
-  const [finished, setFinished] = useState(true);
+  const [finished, setFinished] = useState(false);
 
   const selectOption = (index) => {
     dispatch({ type: "SELECT_OPTION", payload: index });
@@ -40,7 +41,7 @@ const Quiz = () => {
       {finished ? (
         <div className="quiz">
           <div className="finished-logo">
-            <img src={logo} alt="logo" />
+            <img src={complete} alt="logo" />
           </div>
 
           <h1 className="finished__heading">Results</h1>
@@ -103,9 +104,11 @@ const Quiz = () => {
             </ul>
 
             {answered && (
-              <button className="quiz__btn" onClick={nextQuestion}>
-                Next
-              </button>
+              <div className="quiz-btn-container">
+                <button className="quiz__btn" onClick={nextQuestion}>
+                  Next
+                </button>
+              </div>
             )}
           </div>
         </div>
