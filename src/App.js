@@ -10,6 +10,17 @@ const App = () => {
       <QuizProvider>
         <Quiz />
       </QuizProvider>
+      <footer className="footer">
+        created by{" "}
+        <a
+          href="https://devchallenges.io/portfolio/prasannakarki77"
+          target="_blank"
+          rel="noreferrer"
+        >
+          prasannakarki77
+        </a>{" "}
+        - devchallenges.io
+      </footer>
     </div>
   );
 };
