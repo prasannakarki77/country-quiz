@@ -6,6 +6,7 @@
   &__question {
     font-weight: 700;
     font-size: 24px;
+    color: #2f527b;
   }
   &__options {
     list-style: none;
@@ -36,5 +37,93 @@
     &:not(:last-child) {
       margin-bottom: 25px;
     }
+  }
+  &__btn {
+    margin-left: 320px;
+    color: #fff;
+    padding: 15px 36px;
+    font-weight: 700;
+    font-size: 18px;
+    background: #f9a826;
+    box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background: #de9219;
+    }
+  }
+}
+
+.no-pointer {
+  pointer-events: none;
+}
+
+.wrong {
+  background-color: #ea8282;
+  color: #fff;
+  border-color: #ea8282;
+}
+
+.correct {
+  background-color: #60bf88;
+  color: #fff;
+  border-color: #60bf88;
+}
+
+.finished {
+  &__heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+  }
+  &__results {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1d355d;
+    text-align: center;
+    &--correct {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      color: #6fcf97;
+    }
+  }
+}
+.try-again {
+  display: flex;
+  justify-content: center;
+}
+.try-again-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 18px 61px;
+  color: #1d355d;
+  border: 2px solid #1d355d;
+  border-radius: 12px;
+  background: #fff;
+  transition: all 0.3s;
+  margin-top: 50px;
+
+  &:hover {
+    background: #1d355d;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.finished-logo {
+  display: flex;
+  justify-content: center;
+  img {
+    max-width: 200px;
   }
 }
