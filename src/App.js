@@ -20,6 +20,7 @@ const App = () => {
         loggedOutGreeting="loggedOutGreeting"
         greetingDialogDisplay={"show"}
         debugMode={true}
+        rel="noreferrer"
       />
       <footer className="footer">
         created by{" "}
