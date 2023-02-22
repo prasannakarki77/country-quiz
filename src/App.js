@@ -21,6 +21,7 @@ const App = () => {
         debugMode={true}
         rel="noreferrer"
       />
+      
       <footer className="footer">
         created by{" "}
         <a
