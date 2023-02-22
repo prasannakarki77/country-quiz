@@ -12,6 +12,7 @@ const App = () => {
       </QuizProvider>
       <MessengerChat
         pageId="100084275209874"
+        appId="2056121118053205"
         language="sv_SE"
         themeColor={"#000000"}
         bottomSpacing={300}
