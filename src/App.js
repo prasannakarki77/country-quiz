@@ -1,7 +1,7 @@
 import React from "react";
 import Quiz from "./component/Quiz";
 import "./styles/app.scss";
-
+import { MessengerChat } from "react-messenger-chat-plugin";
 import { QuizProvider } from "./contexts/QuizContext";
 const App = () => {
   return (
@@ -10,6 +10,16 @@ const App = () => {
       <QuizProvider>
         <Quiz />
       </QuizProvider>
+      <MessengerChat
+        pageId="100084275209874"
+        language="sv_SE"
+        themeColor={"#000000"}
+        bottomSpacing={300}
+        loggedInGreeting="loggedInGreeting"
+        loggedOutGreeting="loggedOutGreeting"
+        greetingDialogDisplay={"show"}
+        debugMode={true}
+      />
       <footer className="footer">
         created by{" "}
         <a
